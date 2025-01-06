@@ -29,7 +29,7 @@ This is my own way to install KISS Linux on "any" computer.
 - `export KISS_PATH="$HOME/repos/repo/core:$HOME/repos/repo/extra:$HOME/repos/community/community:$KISS_PATH"`
 - `kiss update`
 - `cd /var/db/kiss/installed && kiss build *`
-- `kiss b grub efibootmgr e2fsprogs wpa_supplicant dhcpcd libelf perl zstd baseinit bkeymaps`
+- `kiss b grub efibootmgr e2fsprogs wpa_supplicant dhcpcd libelf perl zstd baseinit bkeymaps util-linux`
 - `cd /root && mkdir tools && cd tools && curl -fLO https://raw.githubusercontent.com/cemkeylan/genfstab/refs/heads/master/genfstab && chmod +x genfstab`
 - `genfstab > /etc/fstab`
 - Add swap partition to /etc/fstab : `/dev/sdXX none swap sw 0 0`
