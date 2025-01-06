@@ -26,7 +26,7 @@ This is my own way to install KISS Linux on "any" computer.
 - `cd /root && mkdir repos && cd repos`
 - `git clone https://codeberg.org/kiss-community/repo && git clone https://codeberg.org/kiss-community/community`
 - Activate repos signatures as shown in the READMEs
-- `export KISS_PATH="$HOME/repos/repo/core:$HOME/repos/repo/extra:$HOME/repos/community/community$KISS_PATH"`
+- `export KISS_PATH="$HOME/repos/repo/core:$HOME/repos/repo/extra:$HOME/repos/community/community:$KISS_PATH"`
 - `kiss update`
 - `cd /var/db/kiss/installed && kiss build *`
 - `kiss b grub efibootmgr e2fsprogs wpa_supplicant dhcpcd libelf perl zstd baseinit bkeymaps`
