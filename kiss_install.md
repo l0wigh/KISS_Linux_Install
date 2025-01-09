@@ -30,8 +30,7 @@ This is my own way to install KISS Linux on "any" computer.
 - `kiss update`
 - `cd /var/db/kiss/installed && kiss build *`
 - `kiss b grub efibootmgr e2fsprogs wpa_supplicant dhcpcd libelf perl zstd baseinit bkeymaps util-linux`
-- `cd /root && mkdir tools && cd tools && curl -fLO https://raw.githubusercontent.com/cemkeylan/genfstab/refs/heads/master/genfstab && chmod +x genfstab`
-- `genfstab > /etc/fstab`
+- `cd /root && mkdir tools && cd tools && curl -fLO https://raw.githubusercontent.com/cemkeylan/genfstab/refs/heads/master/genfstab && chmod +x genfstab && ./genfstab > /etc/fstab`
 - Add swap partition to /etc/fstab : `/dev/sdXX none swap sw 0 0`
 - `cd /root && mkdir kernel && cd kernel`
 - Curl latest kernel (or something close or equal to the last archlinux one)
@@ -54,3 +53,4 @@ This is my own way to install KISS Linux on "any" computer.
 - `mv /boot/System.map /boot/System.map-VERSION`
 - `grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB`
 - `grub-mkconfig -o /boot/grub/grub.cfg`
+- `passwd root`
